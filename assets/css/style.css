@@ -1,0 +1,11 @@
+#title {
+    display: inline-block;
+}
+
+#score {
+    float: right;
+}
+
+span p {
+    display: inline-block;
+}
