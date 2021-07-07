@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Quicksand&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,12 @@ body {
 
 p {
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Patrick Hand', cursive;
+    color: #1c313a;
 }
 
 /* header */
@@ -20,21 +28,33 @@ header {
 
 .title {
     display: inline-block;
-    padding-top: 1rem;
 }
 
 #title-one {
-    padding-left: 1rem;
+    padding-left: 3rem;
+}
+
+#title-two {
+    font-size: 3em;
 }
 
 #score {
     float: right;
-    padding-right: 1rem;
-    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
 
 }
 
-
+#categories-btn {
+    float: right;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    border: 2px solid #718792;
+    border-radius: 5px;
+}
+#categories-btn a {
+    text-decoration: none;
+}
 
 /* category area */
 #category-area {
@@ -44,6 +64,7 @@ header {
 }
 
 #choose-cat {
+    text-align: center;
     margin: 1rem 1rem 2rem;
 }
 
@@ -102,4 +123,8 @@ footer {
     background-color: #ede2e2;
     height: 3rem;
     width: 100%;
+}
+
+#contact {
+    text-align: center;
 }
