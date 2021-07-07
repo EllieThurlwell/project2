@@ -13,6 +13,7 @@ body {
 p {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
 }
 
 h1, h2 {
@@ -50,7 +51,7 @@ header {
     margin-right: 1.5rem;
     margin-top: 1.5rem;
     border: 2px solid #718792;
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 #categories-btn a {
     text-decoration: none;
@@ -59,13 +60,15 @@ header {
 /* category area */
 #category-area {
     background-color: #ede2e2;
-    margin: 8vh 8vw;
-    padding: 1rem;
+    margin: 8vh 6vw;
+    padding: 1rem 0 3rem;
+    border-radius: 2rem;
 }
 
 #choose-cat {
     text-align: center;
     margin: 1rem 1rem 2rem;
+    font-size: 1.5em;
 }
 
 span p {
@@ -73,48 +76,49 @@ span p {
 }
 
 #cats-a, #cats-b {
-    margin: 0 30%;
-    /* position: relative; */
-    /* justify-items: center;
-    overflow: hidden; */
+    margin: 0 15vw;
+    display: flex;
+    justify-content: space-around;
 }
 
 div span {
     display: inline-flex;
-    max-width: 10rem;
+    justify-content: center;
+    width: 12rem;
     padding: 1em;
+    margin: 3rem auto;
 }
 
 /* category colours */
 .cat1 {
     background-color: rgba(255, 242, 0, 0.3);
     border: 2px solid rgb(255, 242, 0);
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 .cat2 {
     background-color: rgba(168, 0, 255, 0.3);
     border: 2px solid rgb(168, 0, 255);
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 .cat3 {
     background-color: rgba(0, 0, 255, 0.3);
     border: 2px solid rgb(0, 0, 255);
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 .cat4 {
     background-color: rgba(0, 255, 114, 0.3);
     border: 2px solid rgb(0, 255, 114);
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 .cat5 {
     background-color: rgba(255, 0, 72, 0.3);
     border: 2px solid rgb(255, 0, 72);
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 .cat6 {
     background-color: rgba(255, 144, 0, 0.3);
     border: 2px solid rgb(255, 144, 0);
-    border-radius: 5px;
+    border-radius: 0.75rem;
 }
 
 footer {
