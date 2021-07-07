@@ -5,46 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/94b2e200e5.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <h1 id="title">Title</h1>
+        <h2 class="title" id="title-one">not</h2><h1 class="title">Pub Quiz<i class="fas fa-trophy"></i></h1>
         <span>
-            <p id="score">Score</p>
+            <h3 id="score">Previous score: 0</h3>
         </span>
     </header>
 
-    <div>
-        <p>Subheading</p>
-    </div>
-    <div class="category-choice">
-        <div>
-            <span class="cat1">
-                <p>Category 1</p>
-            </span>
-            <span class="cat2">
-                <p>Category 2</p>
-            </span>
-            <span class="cat3">
-                <p>Category 3</p>
-            </span>
+    <section id="category-area">
+        <div id="choose-cat">
+            <p>Choose a category and test your knowledge with 10 questions!</p>
         </div>
-        <div>
-            <span class="cat4">
-                <p>Category 4</p>
-            </span>
-            <span class="cat5">
-                <p>Category 5</p>
-            </span>
-            <span class="cat6">
-                <p>Category 6</p>
-            </span>
+        <div class="category-choice">
+            <div id="cats-a">
+                <span class="cat1">
+                    <p>art & literature</p>
+                </span>
+                <span class="cat2">
+                    <p>science</p>
+                </span>
+                <span class="cat3">
+                    <p>geography & history</p>
+                </span>
+            </div>
+            <div id="cats-b">
+                <span class="cat4">
+                    <p>sport</p>
+                </span>
+                <span class="cat5">
+                    <p>film & tv</p>
+                </span>
+                <span class="cat6">
+                    <p>random!</p>
+                </span>
+            </div>
         </div>
-    </div>
-
+    </section>
     <footer>
-        Mail icon
+       <p>get in touch <i class="far fa-envelope"></i></p>
     </footer>
     <script src="assets/javascript/script.js"></script>
 </body>
