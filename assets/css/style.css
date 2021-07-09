@@ -39,7 +39,7 @@ header {
     font-size: 3em;
 }
 
-#score {
+#prev-score {
     float: right;
     padding-right: 1.5rem;
     padding-top: 1.5rem;
@@ -91,9 +91,33 @@ div span {
     margin: 3rem auto;
 }
 
+.small-span {
+    margin: 0.5rem auto;
+}
+
+.right-span {
+    float: right;
+}
+
 .btn {
     text-decoration: none;
     color: #1c313a;
+}
+
+#restart-btn {
+    border: 2px solid #718792;
+    border-radius: 0.75rem;
+    width: auto;
+    padding: 5px;
+    margin-left: 3rem;
+}
+
+#quit-btn {
+    border: 2px solid #718792;
+    border-radius: 0.75rem;
+    width: auto;
+    padding: 5px;
+    margin-right: 3rem;
 }
 
 /* category colours */
