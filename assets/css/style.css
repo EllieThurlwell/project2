@@ -121,37 +121,37 @@ div span {
 }
 
 /* category colours */
-.cat1 {
+#cat1 {
     background-color: rgba(255, 242, 0, 0.3);
     border: 2px solid rgb(255, 242, 0);
     border-radius: 0.75rem;
 }
 
-.cat2 {
+#cat2 {
     background-color: rgba(168, 0, 255, 0.3);
     border: 2px solid rgb(168, 0, 255);
     border-radius: 0.75rem;
 }
 
-.cat3 {
+#cat3 {
     background-color: rgba(0, 0, 255, 0.3);
     border: 2px solid rgb(0, 0, 255);
     border-radius: 0.75rem;
 }
 
-.cat4 {
+#cat4 {
     background-color: rgba(0, 255, 114, 0.3);
     border: 2px solid rgb(0, 255, 114);
     border-radius: 0.75rem;
 }
 
-.cat5 {
+#cat5 {
     background-color: rgba(255, 0, 72, 0.3);
     border: 2px solid rgb(255, 0, 72);
     border-radius: 0.75rem;
 }
 
-.cat6 {
+#cat6 {
     background-color: rgba(255, 144, 0, 0.3);
     border: 2px solid rgb(255, 144, 0);
     border-radius: 0.75rem;
@@ -164,7 +164,9 @@ div span {
 
 /* answer buttons */
 .answer-btn {
-    border: 2px solid;
+    /* border: 2px solid; */
+    border-width: 2px;
+    border-style: solid;
     border-radius: 0.75rem;
 }
 
