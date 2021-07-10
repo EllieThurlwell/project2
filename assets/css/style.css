@@ -59,6 +59,15 @@ header {
     padding: 0.5rem;
 }
 
+
+#category-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 /* game area both pages */
 .game-area {
     background-color: #ede2e2;
@@ -102,6 +111,7 @@ div span {
 .btn {
     text-decoration: none;
     color: #1c313a;
+    margin: auto 3rem;
 }
 
 #restart-btn {

@@ -1,4 +1,4 @@
-const categories = [
+const CATEGORIES = [
     {
         id: 'cat1',
         name: 'art & literature',
@@ -21,7 +21,7 @@ const categories = [
     },
     {
         id: 'cat6',
-        name: 'random',
+        name: 'random!',
     }
 ];
 
@@ -32,17 +32,17 @@ const questionBank = [
         question: 'The term Impressionism was taken from the title of a work by which painter?',
         options: [
             {
-                a: 'Claude Monet',
+                text: 'Claude Monet',
                 isCorrect: true,
             },
             {
-                b: 'Edouard Manet',
+                text: 'Edouard Manet',
             },
             {
-                c: 'Alfred Sisley',
+                text: 'Alfred Sisley',
             },
             {
-                d: 'Henri Matisse',
+                text: 'Henri Matisse',
             },
         ],
     },
@@ -51,16 +51,16 @@ const questionBank = [
         question: 'The eponymous Don Quixote begins fighting what after mistaking them for giants?',
         options: [
             {
-                a: 'Trees',
+                text: 'Trees',
             },
             {
-                b: 'Houses',
+                text: 'Houses',
             },
             {
-                c: 'Horses',
+                text: 'Horses',
             },
             {
-                d: 'Windmills',
+                text: 'Windmills',
                 isCorrect: true,
             },
         ],
@@ -70,17 +70,17 @@ const questionBank = [
         question: '“Now is the winter of our discontent” is a quote from which Shakespeare play?',
         options: [
             {
-                a: 'Macbeth',
+                text: 'Macbeth',
             },
             {
-                b: 'Richard III',
+                text: 'Richard III',
                 isCorrect: true,
             },
             {
-                c: 'Henry V',
+                text: 'Henry V',
             },
             {
-                d: 'King Lear',
+                text: 'King Lear',
             },
         ],
     },
@@ -89,17 +89,17 @@ const questionBank = [
         question: 'David is a famous sculpture made by which artist?',
         options: [
             {
-                a: 'Leonardo',
+                text: 'Leonardo',
             },
             {
-                b: 'Michelangelo',
+                text: 'Michelangelo',
                 isCorrect: true,
             },
             {
-                c: 'Raphael',
+                text: 'Raphael',
             },
             {
-                d: 'Donatello',
+                text: 'Donatello',
             },
         ],
     },
@@ -108,17 +108,17 @@ const questionBank = [
         question: 'Who wrote Sense and Sensibility?',
         options: [
             {
-                a: 'Jane Austen',
+                text: 'Jane Austen',
                 isCorrect: true,
             },
             {
-                b: 'Charlotte Brontë',
+                text: 'Charlotte Brontë',
             },
             {
-                c: 'George Eliot',
+                text: 'George Eliot',
             },
             {
-                d: 'Louisa May Alcott',
+                text: 'Louisa May Alcott',
             },
         ],
     },
@@ -127,17 +127,17 @@ const questionBank = [
         question: 'How many lines are there in a sonnet?',
         options: [
             {
-                a: '5',
+                text: '5',
             },
             {
-                b: '7',
+                text: '7',
             },
             {
-                c: '14',
+                text: '14',
                 isCorrect: true,
             },
             {
-                d: '18',
+                text: '18',
             },
         ],
     },
@@ -146,17 +146,17 @@ const questionBank = [
         question: 'Which is the most visited art gallery in the world?',
         options: [
             {
-                a: 'Metropolitan Museum of Art',
+                text: 'Metropolitan Museum of Art',
             },
             {
-                b: 'Tate Modern',
+                text: 'Tate Modern',
             },
             {
-                c: 'Louvre',
+                text: 'Louvre',
                 isCorrect: true,
             },
             {
-                d: 'Museo Reina Sofía',
+                text: 'Museo Reina Sofía',
             },
         ],
     },
@@ -165,17 +165,17 @@ const questionBank = [
         question: 'Pip is the main character of which Charles Dickens book?',
         options: [
             {
-                a: 'A Christmas Carol',
+                text: 'A Christmas Carol',
             },
             {
-                b: 'Bleak House',
+                text: 'Bleak House',
             },
             {
-                c: 'Great Expectations',
+                text: 'Great Expectations',
                 isCorrect: true,
             },
             {
-                d: 'A Tale of Two Cities',
+                text: 'A Tale of Two Cities',
             },
         ],
     },
@@ -184,16 +184,16 @@ const questionBank = [
         question: 'Salvador Dali was a famous name in which art movement?',
         options: [
             {
-                a: 'Postimpressionism',
+                text: 'Postimpressionism',
             },
             {
-                b: 'Dada',
+                text: 'Dada',
             },
             {
-                c: 'Modernism',
+                text: 'Modernism',
             },
             {
-                d: 'Surrealism',
+                text: 'Surrealism',
                 isCorrect: true,
             },
         ],
@@ -203,17 +203,17 @@ const questionBank = [
         question: 'What book is set in Airstrip One, a province of the superstate Oceania?',
         options: [
             {
-                a: 'Lord of the Flies',
+                text: 'Lord of the Flies',
             },
             {
-                b: 'Nineteen Eighty-Four',
+                text: 'Nineteen Eighty-Four',
                 isCorrect: true,
             },
             {
-                c: 'The Island of Doctor Moreau',
+                text: 'The Island of Doctor Moreau',
             },
             {
-                d: 'Fahrenheit 451',
+                text: 'Fahrenheit 451',
             },
         ],
     },
@@ -223,17 +223,17 @@ const questionBank = [
         question: 'Which element has the highest atomic number?',
         options: [
             {
-                a: 'Rutherfordium',
+                text: 'Rutherfordium',
             },
             {
-                b: 'Plutonium',
+                text: 'Plutonium',
             },
             {
-                c: 'Oganesson',
+                text: 'Oganesson',
                 isCorrect: true,
             },
             {
-                d: 'Tennessine',
+                text: 'Tennessine',
             },
         ],
     },
@@ -242,16 +242,16 @@ const questionBank = [
         question: 'What do the numbers 6, 28 and 496 have in common?',
         options: [
             {
-                a: 'Prime numbers',
+                text: 'Prime numbers',
             },
             {
-                b: 'Rational numbers',
+                text: 'Rational numbers',
             },
             {
-                c: 'Natural numbers',
+                text: 'Natural numbers',
             },
             {
-                d: 'Perfect numbers',
+                text: 'Perfect numbers',
                 isCorrect: true,
             },
         ],
@@ -261,17 +261,17 @@ const questionBank = [
         question: 'Where are the carpal bones found?',
         options: [
             {
-                a: 'Foot',
+                text: 'Foot',
             },
             {
-                b: 'Wrist',
+                text: 'Wrist',
                 isCorrect: true,
             },
             {
-                c: 'Ear',
+                text: 'Ear',
             },
             {
-                d: 'Knee',
+                text: 'Knee',
             },
         ],
     },
@@ -280,17 +280,17 @@ const questionBank = [
         question: 'Which animals, weighing between 11 and 30kg, belong to the family Castoridae?',
         options: [
             {
-                a: 'Beavers',
+                text: 'Beavers',
                 isCorrect: true,
             },
             {
-                b: 'Wolverines',
+                text: 'Wolverines',
             },
             {
-                c: 'Coyote',
+                text: 'Coyote',
             },
             {
-                d: 'Anteater',
+                text: 'Anteater',
             },
         ],
     },
@@ -299,17 +299,17 @@ const questionBank = [
         question: 'What gives flamingos their distinctive pink colour?',
         options: [
             {
-                a: 'Sun exposure',
+                text: 'Sun exposure',
             },
             {
-                b: 'Genetics',
+                text: 'Genetics',
             },
             {
-                c: 'Their diet',
+                text: 'Their diet',
                 isCorrect: true,
             },
             {
-                d: 'Dyed feathers',
+                text: 'Dyed feathers',
             },
         ],
     },
@@ -318,17 +318,17 @@ const questionBank = [
         question: 'The human eye can distinguish how many different colours?',
         options: [
             {
-                a: '100,000',
+                text: '100,000',
             },
             {
-                b: '1 million',
+                text: '1 million',
             },
             {
-                c: '10 million',
+                text: '10 million',
                 isCorrect: true,
             },
             {
-                d: '100 million',
+                text: '100 million',
             },
         ],
     },
@@ -337,17 +337,17 @@ const questionBank = [
         question: 'Known as ‘the father of genetics’, which scientist discovered the principals of inheritance?',
         options: [
             {
-                a: 'Gregor Mendel',
+                text: 'Gregor Mendel',
                 isCorrect: true,
             },
             {
-                b: 'Charles Darwin',
+                text: 'Charles Darwin',
             },
             {
-                c: 'Dmitri Mendeleev',
+                ctext: 'Dmitri Mendeleev',
             },
             {
-                d: 'Louis Pasteur',
+                text: 'Louis Pasteur',
             },
         ],
     },
@@ -356,17 +356,17 @@ const questionBank = [
         question: 'Ascorbic acid is a form of which vitamin?',
         options: [
             {
-                a: 'A',
+                text: 'A',
             },
             {
-                b: 'B',
+                text: 'B',
             },
             {
-                c: 'C',
+                text: 'C',
                 isCorrect: true,
             },
             {
-                d: 'D',
+                text: 'D',
             },
         ],
     },
@@ -375,16 +375,16 @@ const questionBank = [
         question: 'The Earth’s atmosphere is mainly made up of which element?',
         options: [
             {
-                a: 'Hydrogen',
+                text: 'Hydrogen',
             },
             {
-                b: 'Oxygen',
+                text: 'Oxygen',
             },
             {
-                c: 'Carbon',
+                text: 'Carbon',
             },
             {
-                d: 'Nitrogen',
+                text: 'Nitrogen',
                 isCorrect: true,
             },
         ],
@@ -394,16 +394,16 @@ const questionBank = [
         question: 'At what temperature are Celsius and Fahrenheit equal?',
         options: [
             {
-                a: '100°',
+                text: '100°',
             },
             {
-                b: '40°',
+                text: '40°',
             },
             {
-                c: '0°',
+                text: '0°',
             },
             {
-                d: '-40°',
+                text: '-40°',
                 isCorrect: true,
             },
         ],
@@ -414,17 +414,17 @@ const questionBank = [
         question: 'Hamilton is the capital of which British Overseas Territory?',
         options: [
             {
-                a: 'British Virgin Islands',
+                text: 'British Virgin Islands',
             },
             {
-                b: 'Gibraltar',
+                text: 'Gibraltar',
             },
             {
-                c: 'Bermuda',
+                text: 'Bermuda',
                 isCorrect: true,
             },
             {
-                d: 'Falkland Islands',
+                text: 'Falkland Islands',
             },
         ],
     },
@@ -433,17 +433,17 @@ const questionBank = [
         question: 'In which century was the Mona Lisa painted?',
         options: [
             {
-                a: '15th',
+                text: '15th',
             },
             {
-                b: '16th',
+                text: '16th',
                 isCorrect: true,
             },
             {
-                c: '17th',
+                text: '17th',
             },
             {
-                d: '18th',
+                text: '18th',
             },
         ],
     },
@@ -452,17 +452,17 @@ const questionBank = [
         question: 'The longest bridge in Europe, the Vasco de Gama Bridge, is located in which country?',
         options: [
             {
-                a: 'Spain',
+                text: 'Spain',
             },
             {
-                b: 'Portugal',
+                text: 'Portugal',
                 isCorrect: true,
             },
             {
-                c: 'Italy',
+                text: 'Italy',
             },
             {
-                d: 'Greece',
+                text: 'Greece',
             },
         ],
     },
@@ -471,16 +471,16 @@ const questionBank = [
         question: 'In 1925 who announced he was taking dictatorial powers over Italy?',
         options: [
             {
-                a: 'Adolf Hitler',
+                text: 'Adolf Hitler',
             },
             {
-                b: 'Francisco Franco',
+                text: 'Francisco Franco',
             },
             {
-                c: 'Silvio Berlusconi',
+                text: 'Silvio Berlusconi',
             },
             {
-                d: 'Benito Mussolini',
+                text: 'Benito Mussolini',
                 isCorrect: true,
             },
         ],
@@ -490,17 +490,17 @@ const questionBank = [
         question: 'What type of bird appears on the national flag of Mexico?',
         options: [
             {
-                a: 'Eagle',
+                text: 'Eagle',
                 isCorrect: true,
             },
             {
-                b: 'Falcon',
+                text: 'Falcon',
             },
             {
-                c: 'Penguin',
+                text: 'Penguin',
             },
             {
-                d: 'Peacock',
+                text: 'Peacock',
             },
         ],
     },
@@ -509,16 +509,16 @@ const questionBank = [
         question: 'What did Johannes Gutenberg invent in 1440?',
         options: [
             {
-                a: 'Steam engine',
+                text: 'Steam engine',
             },
             {
-                b: 'Spinning wheel',
+                text: 'Spinning wheel',
             },
             {
-                c: 'Telephone',
+                text: 'Telephone',
             },
             {
-                d: 'Printing press',
+                text: 'Printing press',
                 isCorrect: true,
             },
         ],
@@ -528,17 +528,17 @@ const questionBank = [
         question: 'Which of these countries does not border Kenya?',
         options: [
             {
-                a: 'Somalia',
+                text: 'Somalia',
             },
             {
-                b: 'Eritrea',
+                text: 'Eritrea',
                 isCorrect: true,
             },
             {
-                c: 'Uganda',
+                text: 'Uganda',
             },
             {
-                d: 'South Sudan',
+                text: 'South Sudan',
             },
         ],
     },
@@ -547,17 +547,17 @@ const questionBank = [
         question: 'How old was Joan of Arc when she was burnt at the stake?',
         options: [
             {
-                a: '19',
+                text: '19',
                 isCorrect: true,
             },
             {
-                b: '21',
+                text: '21',
             },
             {
-                c: '25',
+                text: '25',
             },
             {
-                d: '27',
+                text: '27',
             },
         ],
     },
@@ -566,17 +566,17 @@ const questionBank = [
         question: 'The Danube flows into what body of water?',
         options: [
             {
-                a: 'Caspian Sea',
+                text: 'Caspian Sea',
             },
             {
-                b: 'The Dead Sea',
+                text: 'The Dead Sea',
             },
             {
-                c: 'The Black Sea',
+                text: 'The Black Sea',
                 isCorrect: true,
             },
             {
-                d: 'Sea of Marmara',
+                text: 'Sea of Marmara',
             },
         ],
     },
@@ -585,17 +585,17 @@ const questionBank = [
         question: 'In 1990 who created the first web server and laid the foundations for the World Wide Web?',
         options: [
             {
-                a: 'Tim Berners-Lee',
+                text: 'Tim Berners-Lee',
                 isCorrect: true,
             },
             {
-                b: 'Alan Turing',
+                text: 'Alan Turing',
             },
             {
-                c: 'Manuel Blum',
+                text: 'Manuel Blum',
             },
             {
-                d: 'Grace Hopper',
+                text: 'Grace Hopper',
             },
         ],
     },
@@ -605,17 +605,17 @@ const questionBank = [
         question: 'Which American city is home to teams such as the Rockets, Dynamo, Astros and Dash?',
         options: [
             {
-                a: 'New York',
+                text: 'New York',
             },
             {
-                b: 'Houston',
+                text: 'Houston',
                 isCorrect: true,
             },
             {
-                c: 'San Francisco',
+                text: 'San Francisco',
             },
             {
-                d: 'Seattle',
+                text: 'Seattle',
             },
         ],
     },
@@ -624,16 +624,16 @@ const questionBank = [
         question: 'Which nation caused the greatest Rugby World Cup shock ever when they beat South Africa in 2015?',
         options: [
             {
-                a: 'England',
+                text: 'England',
             },
             {
-                b: 'Argentina',
+                text: 'Argentina',
             },
             {
-                c: 'Wales',
+                text: 'Wales',
             },
             {
-                d: 'Japan',
+                text: 'Japan',
                 isCorrect: true,
             },
         ],
@@ -643,17 +643,17 @@ const questionBank = [
         question: 'How many people make up an Olympic curling team?',
         options: [
             {
-                a: '2',
+                text: '2',
             },
             {
-                b: '3',
+                text: '3',
             },
             {
-                c: '4',
+                text: '4',
                 isCorrect: true,
             },
             {
-                d: '5',
+                text: '5',
             },
         ],
     },
@@ -662,17 +662,17 @@ const questionBank = [
         question: 'Which country hosted the 2010 football World Cup?',
         options: [
             {
-                a: 'South Africa',
+                text: 'South Africa',
                 isCorrect: true,
             },
             {
-                b: 'Germany',
+                text: 'Germany',
             },
             {
-                c: 'Brazil',
+                text: 'Brazil',
             },
             {
-                d: 'Italy',
+                text: 'Italy',
             },
         ],
     },
@@ -681,17 +681,17 @@ const questionBank = [
         question: 'Ali Farag and Nour El Tayeb became the first married couple in sporting history to win the same singles title on the same day in which sport?',
         options: [
             {
-                a: 'Squash',
+                text: 'Squash',
                 isCorrect: true,
             },
             {
-                b: 'Badminton',
+                text: 'Badminton',
             },
             {
-                c: 'Tennis',
+                text: 'Tennis',
             },
             {
-                d: 'Trampolining',
+                text: 'Trampolining',
             },
         ],
     },
@@ -700,17 +700,17 @@ const questionBank = [
         question: 'In April 2021 Rachael Blackmore became the first female winner of what competition?',
         options: [
             {
-                a: 'Kentucky Derby',
+                text: 'Kentucky Derby',
             },
             {
-                b: 'Grand National',
+                text: 'Grand National',
                 isCorrect: true,
             },
             {
-                c: 'Epsom Derby',
+                text: 'Epsom Derby',
             },
             {
-                d: 'Ascot Gold Cup',
+                text: 'Ascot Gold Cup',
             },
         ],
     },
@@ -719,17 +719,17 @@ const questionBank = [
         question: 'In 1966 Pickles the dog helped find which stolen trophy?',
         options: [
             {
-                a: 'The Ashes urn',
+                text: 'The Ashes urn',
             },
             {
-                b: 'Webb Ellis Cup',
+                text: 'Webb Ellis Cup',
             },
             {
-                c: 'Jules Rimet trophy',
+                text: 'Jules Rimet trophy',
                 isCorrect: true,
             },
             {
-                d: 'Vince Lombardi trophy',
+                text: 'Vince Lombardi trophy',
             },
         ],
     },
@@ -738,16 +738,16 @@ const questionBank = [
         question: 'In which winter sport might you have to take a penalty loop?',
         options: [
             {
-                a: 'Speed skating',
+                text: 'Speed skating',
             },
             {
-                b: 'Luge',
+                text: 'Luge',
             },
             {
-                c: 'Bobsleigh',
+                text: 'Bobsleigh',
             },
             {
-                d: 'Biathlon',
+                text: 'Biathlon',
                 isCorrect: true,
             },
         ],
@@ -757,17 +757,17 @@ const questionBank = [
         question: 'In Olympic boxing what category comes between lightweight and middleweight?',
         options: [
             {
-                a: 'Welterweight',
+                text: 'Welterweight',
                 isCorrect: true,
             },
             {
-                b: 'Featherweight',
+                text: 'Featherweight',
             },
             {
-                c: 'Light heavyweight',
+                text: 'Light heavyweight',
             },
             {
-                d: 'Flyweight',
+                text: 'Flyweight',
             },
         ],
     },
@@ -776,17 +776,17 @@ const questionBank = [
         question: 'Ayrton Senna lost his life after crashing at which Formula 1 Grand Prix race?',
         options: [
             {
-                a: 'Monaco',
+                text: 'Monaco',
             },
             {
-                b: 'Barcelona',
+                text: 'Barcelona',
             },
             {
-                c: 'Imola',
+                text: 'Imola',
                 isCorrect: true,
             },
             {
-                d: 'Spa',
+                text: 'Spa',
             },
         ],
     },
@@ -796,16 +796,16 @@ const questionBank = [
         question: 'What brand of car is famously driven by James Bond?',
         options: [
             {
-                a: 'Rolls Royce',
+                text: 'Rolls Royce',
             },
             {
-                b: 'Bentley',
+                text: 'Bentley',
             },
             {
-                c: 'Jaguar',
+                text: 'Jaguar',
             },
             {
-                d: 'Aston Martin',
+                text: 'Aston Martin',
                 isCorrect: true,
             },
         ],
@@ -815,17 +815,17 @@ const questionBank = [
         question: 'Which historical drama set in Yorkshire was created and co-written by Julian Fellowes?',
         options: [
             {
-                a: 'Bridgerton',
+                text: 'Bridgerton',
             },
             {
-                b: 'Downton Abbey',
+                text: 'Downton Abbey',
                 isCorrect: true,
             },
             {
-                c: 'Outlander',
+                text: 'Outlander',
             },
             {
-                d: 'Poldark',
+                text: 'Poldark',
             },
         ],
     },
@@ -834,17 +834,17 @@ const questionBank = [
         question: 'In what year was the first Star Wars film released?',
         options: [
             {
-                a: '1967',
+                text: '1967',
             },
             {
-                b: '1972',
+                text: '1972',
             },
             {
-                c: '1977',
+                text: '1977',
                 isCorrect: true,
             },
             {
-                d: '1982',
+                text: '1982',
             },
         ],
     },
@@ -853,17 +853,17 @@ const questionBank = [
         question: 'Which brothers created the series Stranger Things?',
         options: [
             {
-                a: 'Coen brothers',
+                text: 'Coen brothers',
             },
             {
-                b: 'Blues brothers',
+                text: 'Blues brothers',
             },
             {
-                c: 'Duffer brothers',
+                text: 'Duffer brothers',
                 isCorrect: true,
             },
             {
-                d: 'Wright brothers',
+                dtext: 'Wright brothers',
             },
         ],
     },
@@ -872,17 +872,17 @@ const questionBank = [
         question: 'Who directed the 2000 film Gladiator?',
         options: [
             {
-                a: 'Ridley Scott',
+                text: 'Ridley Scott',
                 isCorrect: true,
             },
             {
-                b: 'Steven Spielberg',
+                text: 'Steven Spielberg',
             },
             {
-                c: 'Martin Scorsese',
+                text: 'Martin Scorsese',
             },
             {
-                d: 'James Cameron',
+                text: 'James Cameron',
             },
         ],
     },
@@ -891,17 +891,17 @@ const questionBank = [
         question: 'Which actor is known for his roles as Magneto and Gandalf?',
         options: [
             {
-                a: 'Patrick Stewart',
+                text: 'Patrick Stewart',
             },
             {
-                b: 'Ian McKellan',
+                text: 'Ian McKellan',
                 isCorrect: true,
             },
             {
-                c: 'Christopher Lee',
+                text: 'Christopher Lee',
             },
             {
-                d: 'Hugh Jackman',
+                text: 'Hugh Jackman',
             },
         ],
     },
@@ -910,17 +910,17 @@ const questionBank = [
         question: 'What did Tom Hanks’ character name the ball he talked to in Cast Away?',
         options: [
             {
-                a: 'Nelson',
+                text: 'Nelson',
             },
             {
-                b: 'Frank',
+                text: 'Frank',
             },
             {
-                c: 'Wilson',
+                text: 'Wilson',
                 isCorrect: true,
             },
             {
-                d: 'Mark',
+                text: 'Mark',
             },
         ],
     },
@@ -929,17 +929,17 @@ const questionBank = [
         question: 'In the series Breaking Bad who played the character Walter White?',
         options: [
             {
-                a: 'Bryan Cranston',
+                text: 'Bryan Cranston',
                 isCorrect: true,
             },
             {
-                b: 'Aaron Paul',
+                text: 'Aaron Paul',
             },
             {
-                c: 'Jason Bateman',
+                text: 'Jason Bateman',
             },
             {
-                d: 'Pedro Pascal',
+                text: 'Pedro Pascal',
             },
         ],
     },
@@ -948,16 +948,16 @@ const questionBank = [
         question: 'Famous westerns director Sergio Leone was born in what country?',
         options: [
             {
-                a: 'Spain',
+                text: 'Spain',
             },
             {
-                b: 'USA',
+                text: 'USA',
             },
             {
-                c: 'Argentina',
+                text: 'Argentina',
             },
             {
-                d: 'Italy',
+                text: 'Italy',
                 isCorrect: true,
             },
         ],
@@ -967,17 +967,17 @@ const questionBank = [
         question: 'Who starred as Fox Mulder in the series X-Files?',
         options: [
             {
-                a: 'Mitch Pileggi',
+                text: 'Mitch Pileggi',
             },
             {
-                b: 'David Duchovny',
+                text: 'David Duchovny',
                 isCorrect: true,
             },
             {
-                c: 'David Lynch',
+                text: 'David Lynch',
             },
             {
-                d: 'Matthew Fox',
+                text: 'Matthew Fox',
             },
         ],
     },
