@@ -29,32 +29,44 @@ function isCategoryValid(categoryId) {
 const currentCategoryId = getCategoryFromURLParams();
 if (!isCategoryValid(currentCategoryId)) {
 //   window.location.href = './';
-} //gets the site stuck in a refresh loop on homepage
+  alert('Invalid input');
+  window.location.href = './'
+} //make error html with message and link back home?
 
 const questionsToShow = questionBank.filter(
   (eachQuestion) => eachQuestion.categoryId === currentCategoryId
 );
 
-
-
 let currentQuestionIndex = 0;
 showNextQuestion();
 
 function showQuestion(currentQuestionIndex) {
-  const questionDetails = questionsToShow[currentQuestionIndex - 1].question; //.question not working - how else to bring it from bank
+  let questionDetails = questionsToShow[currentQuestionIndex - 1].question;
   document.getElementById('question-text').innerText = questionDetails;
-  let answerBoxes = document.getElementsByClassName('answer-text');
+  let answerText = document.getElementsByClassName('answer-text');
   let options = questionsToShow[currentQuestionIndex - 1].options
   for (let i = 0; i < options.length; i++) {
-    answerBoxes[i].innerText = options[i].text;
+    answerText[i].innerText = options[i].text;
   }
-  // Show the question on the UI
+
+
+  let answerBoxes = document.getElementsByClassName('answer-btn');
+  for (let i = 0; i < answerBoxes.length; i++) {
+    answerBoxes[i].addEventListener('click', checkAnswer);//should be checkAnswer once working?
+  }
+  questionNumber();
   // In case the option is correct, you need to add a [data-correct=true] when isCorrect = true
 }
 
+function questionNumber() {
+  let oldNumber = parseInt(document.getElementById('current-q').innerText);
+  document.getElementById('current-q').innerText = ++oldNumber;
+}
+
 function checkAnswer(answerNode) {
-  const isCorrect = answerNode.dataset.correct === 'true';
- // Increment score;
+  const isCorrect = answerNode.dataset.isCorrect === 'true';
+ // if correct background green and increment score
+ // if incorrect background red and correct background green 
   showNextQuestion();
 }
 
@@ -64,4 +76,4 @@ function showNextQuestion() {
 }
 
 
-console.log(questionsToShow[currentQuestionIndex - 1].options);
+console.log(parseInt(document.getElementById('current-q').innerText));

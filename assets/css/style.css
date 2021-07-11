@@ -114,6 +114,10 @@ div span {
     margin: auto 3rem;
 }
 
+#current-q {
+    padding: 0 5px;
+}
+
 #restart-btn {
     border: 2px solid #718792;
     border-radius: 0.75rem;
