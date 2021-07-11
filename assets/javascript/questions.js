@@ -981,4 +981,195 @@ const questionBank = [
             },
         ],
     },
+    // category 6 - selection of previous questions chosen using a random number generator
+    {
+        categoryId: 'cat6',
+        question: 'In which century was the Mona Lisa painted?',
+        options: [
+            {
+                text: '15th',
+            },
+            {
+                text: '16th',
+                isCorrect: true,
+            },
+            {
+                text: '17th',
+            },
+            {
+                text: '18th',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'The human eye can distinguish how many different colours?',
+        options: [
+            {
+                text: '100,000',
+            },
+            {
+                text: '1 million',
+            },
+            {
+                text: '10 million',
+                isCorrect: true,
+            },
+            {
+                text: '100 million',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'In what year was the first Star Wars film released?',
+        options: [
+            {
+                text: '1967',
+            },
+            {
+                text: '1972',
+            },
+            {
+                text: '1977',
+                isCorrect: true,
+            },
+            {
+                text: '1982',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'How many people make up an Olympic curling team?',
+        options: [
+            {
+                text: '2',
+            },
+            {
+                text: '3',
+            },
+            {
+                text: '4',
+                isCorrect: true,
+            },
+            {
+                text: '5',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'Which is the most visited art gallery in the world?',
+        options: [
+            {
+                text: 'Metropolitan Museum of Art',
+            },
+            {
+                text: 'Tate Modern',
+            },
+            {
+                text: 'Louvre',
+                isCorrect: true,
+            },
+            {
+                text: 'Museo Reina Sofía',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'Which brothers created the series Stranger Things?',
+        options: [
+            {
+                text: 'Coen brothers',
+            },
+            {
+                text: 'Blues brothers',
+            },
+            {
+                text: 'Duffer brothers',
+                isCorrect: true,
+            },
+            {
+                text: 'Wright brothers',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'What did Johannes Gutenberg invent in 1440?',
+        options: [
+            {
+                text: 'Steam engine',
+            },
+            {
+                text: 'Spinning wheel',
+            },
+            {
+                text: 'Telephone',
+            },
+            {
+                text: 'Printing press',
+                isCorrect: true,
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'Salvador Dali was a famous name in which art movement?',
+        options: [
+            {
+                text: 'Postimpressionism',
+            },
+            {
+                text: 'Dada',
+            },
+            {
+                text: 'Modernism',
+            },
+            {
+                text: 'Surrealism',
+                isCorrect: true,
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'Ascorbic acid is a form of which vitamin?',
+        options: [
+            {
+                text: 'A',
+            },
+            {
+                text: 'B',
+            },
+            {
+                text: 'C',
+                isCorrect: true,
+            },
+            {
+                text: 'D',
+            },
+        ],
+      },
+      {
+        categoryId: 'cat6',
+        question: 'In which winter sport might you have to take a penalty loop?',
+        options: [
+            {
+                text: 'Speed skating',
+            },
+            {
+                text: 'Luge',
+            },
+            {
+                text: 'Bobsleigh',
+            },
+            {
+                text: 'Biathlon',
+                isCorrect: true,
+            },
+        ],
+      },
 ];

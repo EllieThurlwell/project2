@@ -186,11 +186,16 @@ div span {
 
 /* footer both pages */
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: #ede2e2;
     height: 3rem;
     width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1c313a;
 }
 
 #contact {

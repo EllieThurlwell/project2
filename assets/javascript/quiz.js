@@ -7,13 +7,13 @@ let answerBtns = document.getElementsByClassName('answer-btn');
 //     ;});
 //   })
 // }
-function initQuiz() {
-    answerBtns.forEach(function (eachAnswer) {
-        eachAnswer.addEventListener('click', function () {
-            checkAnswer(this);
-        });
-    });
-}
+// function initQuiz() {
+//     answerBtns.forEach(function (eachAnswer) {
+//         eachAnswer.addEventListener('click', function () {
+//             checkAnswer(this);
+//         });
+//     });
+// } not sure if this is necessary
 
 function getCategoryFromURLParams() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -58,6 +58,13 @@ function showQuestion(currentQuestionIndex) {
   // In case the option is correct, you need to add a [data-correct=true] when isCorrect = true
 }
 
+// let allQuestions = questionBank.question;
+// if (currentCategoryId === 'cat6') {
+//   let randomQuestion = Math.floor(Math.random() * allQuestions.length);
+//   let currentQuestion = allQuestions[randomQuestion];
+//   document.getElementById('question-text').innerText = currentQuestion;
+// }
+
 function questionNumber() {
   let oldNumber = parseInt(document.getElementById('current-q').innerText);
   document.getElementById('current-q').innerText = ++oldNumber;
@@ -80,11 +87,11 @@ function restartQuiz() {
   restart.addEventListener('click', showQuestion[0]);
 }
 
+//display alert when user clicks quit
 function quitQuiz() {
   alert('Are you sure you want to quit?');
 }
-
 let quitBtn = document.getElementById('quit-btn');
 quitBtn.addEventListener('click', quitQuiz);
 
-console.log(parseInt(document.getElementById('current-q').innerText));
+console.log(allQuestions);
