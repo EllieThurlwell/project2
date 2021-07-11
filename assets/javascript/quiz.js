@@ -52,7 +52,7 @@ function showQuestion(currentQuestionIndex) {
 
   let answerBoxes = document.getElementsByClassName('answer-btn');
   for (let i = 0; i < answerBoxes.length; i++) {
-    answerBoxes[i].addEventListener('click', checkAnswer);//should be checkAnswer once working?
+    answerBoxes[i].addEventListener('click', showNextQuestion);//should be checkAnswer once working?
   }
   questionNumber();
   // In case the option is correct, you need to add a [data-correct=true] when isCorrect = true
@@ -75,5 +75,16 @@ function showNextQuestion() {
   showQuestion(currentQuestionIndex);
 }
 
+function restartQuiz() {
+  let restart = document.getElementById('restart-btn');
+  restart.addEventListener('click', showQuestion[0]);
+}
+
+function quitQuiz() {
+  alert('Are you sure you want to quit?');
+}
+
+let quitBtn = document.getElementById('quit-btn');
+quitBtn.addEventListener('click', quitQuiz);
 
 console.log(parseInt(document.getElementById('current-q').innerText));
