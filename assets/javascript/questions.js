@@ -344,7 +344,7 @@ const questionBank = [
                 text: 'Charles Darwin',
             },
             {
-                ctext: 'Dmitri Mendeleev',
+                text: 'Dmitri Mendeleev',
             },
             {
                 text: 'Louis Pasteur',
@@ -863,7 +863,7 @@ const questionBank = [
                 isCorrect: true,
             },
             {
-                dtext: 'Wright brothers',
+                text: 'Wright brothers',
             },
         ],
     },

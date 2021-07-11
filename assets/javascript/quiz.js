@@ -17,7 +17,8 @@ function initQuiz() {
 
 function getCategoryFromURLParams() {
   const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get('categoryId');
+  console.log(urlParams.get('category'));
+  return urlParams.get('category');
 }
 
 function isCategoryValid(categoryId) {
@@ -34,12 +35,19 @@ const questionsToShow = questionBank.filter(
   (eachQuestion) => eachQuestion.categoryId === currentCategoryId
 );
 
+
+
 let currentQuestionIndex = 0;
 showNextQuestion();
 
 function showQuestion(currentQuestionIndex) {
   const questionDetails = questionsToShow[currentQuestionIndex - 1].question; //.question not working - how else to bring it from bank
   document.getElementById('question-text').innerText = questionDetails;
+  let answerBoxes = document.getElementsByClassName('answer-text');
+  let options = questionsToShow[currentQuestionIndex - 1].options
+  for (let i = 0; i < options.length; i++) {
+    answerBoxes[i].innerText = options[i].text;
+  }
   // Show the question on the UI
   // In case the option is correct, you need to add a [data-correct=true] when isCorrect = true
 }
@@ -56,4 +64,4 @@ function showNextQuestion() {
 }
 
 
- 
+console.log(questionsToShow[currentQuestionIndex - 1].options);
