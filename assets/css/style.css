@@ -9,7 +9,7 @@
 /* general styling */
 body {
     background-image: url(../images/backgroundimg.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     background-color: #718792;
 }
@@ -294,9 +294,9 @@ footer a {
 
 /* media queries */
 @media screen and (max-width: 1000px) {
-    body {
+    /* body {
         background-repeat: repeat;
-    }
+    } */
     .game-area {
         margin: 4vh 4vw;
     }
@@ -369,5 +369,55 @@ footer a {
     #qs-one, #qs-two {
         display: block;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .small-span {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    .right-span {
+        float: none;
+    }
+    #quit-btn {
+        width: 4rem;
+        margin: auto;
+    }
+    div span {
+        margin: 1rem auto;
+    }
+    #modal-content {
+        height: 22%;
+    }
+    #modal-message {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    header {
+        height: 5rem;
+    }
+    #prev-span {
+        float: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    #categories-btn {
+        float: none;
+        display: flex;
+        justify-content: center;
+        width: 5rem;
+        margin: auto;
+    }
+    #full-title {
+        display: flex;
+        justify-content: center;
+    }
+    #title-one {
+        padding: 0;
     }
 }
