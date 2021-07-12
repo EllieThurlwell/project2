@@ -292,3 +292,45 @@ footer a {
     text-align: center;
 }
 
+/* media queries */
+@media screen and (max-width: 1000px) {
+    body {
+        background-repeat: repeat;
+    }
+    .game-area {
+        margin: 4vh 4vw;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #title-one {
+        font-size: 1rem;
+    }
+    #title-two {
+        font-size: 2rem;
+    }
+    #prev-span {
+        padding-top: 0.5rem;
+        font-size: 0.9rem;
+    }
+    header {
+        height: 3rem;
+    }
+    #choose-cat, #question {
+        margin: 1rem 0.5rem;
+    }
+    #categories-btn {
+        margin-top: 0.5rem;
+        margin-right: 0.3rem;
+    }
+    #categories-btn h2 {
+        font-size: 1.2rem;
+    }
+    footer {
+        width: 8rem;
+        font-size: 0.8rem;
+    }
+    .cat-btn:hover, .answer-btn:hover {
+        transform: none;
+    }
+}
