@@ -8,3 +8,8 @@ CATEGORIES.forEach((eachCategory) => {
   </a>`;
 });
 document.getElementById('category-container').innerHTML = categoryHtml;
+
+
+let previousScore = document.getElementById('prev-score');
+let lastTotal = localStorage.getItem('totalScore');
+previousScore.innerText = lastTotal;
