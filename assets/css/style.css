@@ -136,6 +136,7 @@ div span {
     width: auto;
     padding: 5px;
     margin-right: 3rem;
+    cursor: pointer;
 }
 
 /* category colours */
@@ -213,7 +214,7 @@ div span {
     height: 35%;
 }
 
-#modal-close {
+/* #modal-close {
 	color: #718792;
 	float: right;
 	font-size: 28px;
@@ -227,10 +228,10 @@ div span {
 	color: #1c313a;
 	text-decoration: none;
 	cursor: pointer;
-}
+} */
 
 #modal-message {
-    padding-top: 6vh;
+    padding-top: 3vh;
     color: #1c313a;
     font-weight: 600;
     width: auto;
@@ -246,6 +247,19 @@ div span {
     color: limegreen;
 }
 
+#categories-btn-2 {
+    border: 2px solid #718792;
+    border-radius: 0.75rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#categories-btn-2 a {
+    text-decoration: none;
+    color: #1c313a;
+}
 /* to be applied by javascript */
 /* .correct {
     background-color: limegreen;
@@ -277,3 +291,4 @@ footer a {
 #contact {
     text-align: center;
 }
+

@@ -82,15 +82,15 @@ function showNextQuestion() {
 function onGameOver() {
   // SHow a popup
   let modal = document.getElementById('score-modal');
-  let modalClose = document.getElementById('modal-close');
+  // let modalClose = document.getElementById('modal-close');
   let modalScore = document.getElementById('modal-score');
 
   modalScore.innerText = localStorage.getItem('totalScore');
   modal.style.display = 'block';
   
-  modalClose.onClick = function() {
-    modal.style.display = 'none';
-  }
+  // modalClose.onClick = function() {
+  //   modal.style.display = 'none';
+  // }
   window.onClick = function(event) {
     if (event.target == modal) {
       modal.style.display = 'none';
@@ -99,7 +99,13 @@ function onGameOver() {
 }
 
 function quitQuiz() {
-  alert('Are you sure you want to quit?');
+  let link = document.getElementById('quit-link');
+  let ok = confirm('Are you sure you want to quit?');
+  if (ok == true) {
+    link.setAttribute('href', 'index.html');
+  } else {
+    return;
+  }
 }
 let quitBtn = document.getElementById('quit-btn');
 quitBtn.addEventListener('click', quitQuiz);
