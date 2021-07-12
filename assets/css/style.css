@@ -118,12 +118,8 @@ div span {
     padding: 0 5px;
 }
 
-#restart-btn {
-    border: 2px solid #718792;
-    border-radius: 0.75rem;
-    width: auto;
-    padding: 5px;
-    margin-left: 3rem;
+#quit-area {
+    padding-bottom: 1.5rem;
 }
 
 #quit-btn {
@@ -183,6 +179,15 @@ div span {
     border-style: solid;
     border-radius: 0.75rem;
 }
+
+/* to be applied by javascript */
+/* .correct {
+    background-color: limegreen;
+}
+
+.incorrect {
+    background-color: orangered;
+} */
 
 /* footer both pages */
 footer {
