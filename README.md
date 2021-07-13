@@ -26,11 +26,11 @@ Welcome to the notPub Quiz! If you ever get bored of playing cards or the time i
 
 -   ### Design
     -   #### Colour Scheme
-        -   The main colours used across the site are a warm beige as a background and a bold dark grey that allows the text to stand out. The six category buttons each have their own background colour, making it clear that they are different and independent of eachother. A green and a red accent on selected answers uses known colour connotations to differentiate correct and incorrect.
+        -   The main colours used across the site are a warm beige as a background and a bold dark grey that allows the text to stand out. The six category buttons each have their own background colour, making it clear that they are different and independent of each other. A green and a red accent on selected answers uses known colour connotations to differentiate correct and incorrect.
     -   #### Typography
         -   Quicksand is the main font used throughout the website with Sans Serif as the fallback font. Quicksand is clean, simple, and easy to read, appropriate for the site's purpose. Categories and possible answers are easy to read. Patrick Hand is the font for titles and headings with Cursive as the fallback font. It is fun and resembles handwriting, linking back to the traditional handwritten pub quiz. It is also clear and easily readable.
     -   #### Imagery
-        -   Imagery is secondary on this site and should not detract from it's main purpose. As such the background image is fairly simple and not too busy so as not to become the focus. It depicts a typical pub interior with tables and chairs in the foreground, reminiscent of usual pub quiz surroundings.
+        -   Imagery is secondary on this site and should not detract from its main purpose. As such the background image is fairly simple and not too busy so as not to become the focus. It depicts a typical pub interior with tables and chairs in the foreground, reminiscent of usual pub quiz surroundings.
        
 
 *   ### Wireframes
@@ -94,7 +94,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to check valid
 
     2. As a First Time Visitor, I want to be able to easily navigate throughout the quiz site.
 
-        - The site contains clearly defined buttons with either hover effects or pointer cursors to be recogisable to the user.
+        - The site contains clearly defined buttons with either hover effects or pointer cursors to be recognisable to the user.
         - Once a category has been chosen the site moves through a set of questions automatically, so the user can focus on playing the quiz.
         - The quiz page has a button to return to the categories and a button to quit the game should the user choose to. 
     <h2 align="center"><img src="assets/images/README/first-time-two.png"></h2>
@@ -135,13 +135,13 @@ The W3C Markup Validator and W3C CSS Validator Services were used to check valid
 -   The Website was tested on Google Chrome and Safari browsers on both desktop and mobile, and Firefox and Microsoft Edge on desktop.
 -   The website was viewed on a variety of devices including MacBook, laptop, iPad, iPhone 7 plus, iPhone 12 mini, Samsung Galaxy Note8 and Samsung Galaxy Note20 Ultra.
 -   Friends and family members were asked to review the site to point out any issues. 
--   Several friends who often attend and play pub quizes were asked to review the site, and responded that the content is interesting and relevant, and that it fits the intended audience and purpose. 
+-   Several friends who often attend and play pub quizzes were asked to review the site, and responded that the content is interesting and relevant, and that it fits the intended audience and purpose. 
 
 ### Bugs
 
 -   Category buttons were not loading on the home page and showed as undefined in the console.
     - fixed by placing the script tag for the questions.js file first in index.html, meaning it is read and implemented first.
--   Ititially had the contact button in a full width footer. The footer would lift and overlap the page contents on a smaller viewport.
+-   Initially had the contact button in a full width footer. The footer would lift and overlap the page contents on a smaller viewport.
     - fixed initially by using position: fixed, then later styled to appear as a button below the game area.
 -   When first calling the check answer function the quit button stopped being responsive and the setTimeout did not work.
     - fixed automatically when function was completed.
