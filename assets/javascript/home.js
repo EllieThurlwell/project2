@@ -9,7 +9,7 @@ CATEGORIES.forEach((eachCategory) => {
 });
 document.getElementById('category-container').innerHTML = categoryHtml;
 
-
+// display user's previous score on home page
 let previousScore = document.getElementById('prev-score');
 let lastTotal = localStorage.getItem('totalScore');
 previousScore.innerText = lastTotal;

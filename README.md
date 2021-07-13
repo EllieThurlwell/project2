@@ -1,102 +1,183 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">notPub Quiz</h1>
 
-Welcome Ellie Thurlwell,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+Welcome to the notPub Quiz! If you ever get bored of playing cards or the time it takes to set up a board game, look no further. With this online quiz you can test your knowledge of a range of subjects and compare how well you do with friends. Just like a pub quiz but anywhere and anytime you want!
 
-## Gitpod Reminders
+<a href="" target="_blank">View the live project here.</a>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<h2 align="center"><img src="assets/readme-assets/mock-up.png"></h2>
 
-`python3 -m http.server`
+## User Experience (UX)
 
-A blue button should appear to click: _Make Public_,
+-   ### User stories
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### First Time Visitor Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+        1. As a First Time Visitor, I want to be able to enjoy playing an interesting online quiz.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the quiz site.
+        3. As a First Time Visitor, I want to be able to understand the site enough to recommend it to friends.
 
-A blue button should appear to click: _Make Public_,
+    -   #### Returning Visitor Goals
 
-Another blue button should appear to click: _Open Browser_.
+        1. As a Returning Visitor, I want to remember the interface and use the site intuitively.
+        2. As a Returning Visitor, I want to be able to see my score and try to better it.
+        3. As a Returning Visitor, I want to be able to know the site well enough to explain it to friends.
+        4. As a Returning Visitor, I want to be able to contact the site owner if necessary.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-   ### Design
+    -   #### Colour Scheme
+        -   The main colours used across the site are a warm beige as a background and a bold dark grey that allows the text to stand out. The six category buttons each have their own background colour, making it clear that they are different and independent of eachother. A green and a red accent on selected answers uses known colour connotations to differentiate correct and incorrect.
+    -   #### Typography
+        -   Quicksand is the main font used throughout the website with Sans Serif as the fallback font. Quicksand is clean, simple, and easy to read, appropriate for the site's purpose. Categories and possible answers are easy to read. Patrick Hand is the font for titles and headings with Cursive as the fallback font. It is fun and resembles handwriting, linking back to the traditional handwritten pub quiz. It is also clear and easily readable.
+    -   #### Imagery
+        -   Imagery is secondary on this site and should not detract from it's main purpose. As such the background image is fairly simple and not too busy so as not to become the focus. It depicts a typical pub interior with tables and chairs in the foreground, reminiscent of usual pub quiz surroundings.
+       
 
-To log into the Heroku toolbelt CLI:
+*   ### Wireframes
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    -   Wireframes for desktop and mobile view, for both the homepage and quiz page.
+    <h2 align="center"><img src="assets/readme-assets/wireframes.png"></h2>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Features
 
-------
+-   Responsive across a variety of screen sizes
 
-## Release History
+-   Interactive elements throughout
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+-   Elements that are responsive to user inputs
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+-   localStorage implemented to display the user's score
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Technologies Used
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Languages Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Frameworks, Libraries & Programs Used
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Patrick Hand' and 'Quicksand' fonts into the style.css file.
+- [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used to add title icon, to create the favicon, and for the contact button.
+- [W3Schools](https://www.w3schools.com/)
+    - W3Schools tutorials were used to inform JavaScript functions.
+- [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [GitHub:](https://github.com/)
+    - GitHub is used to store the project's code after being pushed from Git.
+- [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Testing
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The W3C Markup Validator and W3C CSS Validator Services were used to check validity of code used throughout the project.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - errors on both html files for elements not being allowed to be children of certain other elements
+    - Despite the errors, the code currently remains the same. It is being used for layout purposes and an alternative method was not yet found. This would be fixed in any later releases of the site.
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - no errors found
+-   [Lighthouse](https://developers.google.com/web/tools/lighthouse) - Performance: 98, Accessibility: 100, Best Practices: 100, SEO: 100.
+<h2 align="center"><img src="assets/readme-assets/validator-results.png"></h2>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Testing User Stories from User Experience (UX) Section
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-   #### First Time Visitor Goals
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    1. As a First Time Visitor, I want to be able to enjoy playing an interesting online quiz.
 
-------
+        - Upon entering the site, users are greeted with clear instructions of how to begin playing. 
+        - On desktop the available options on both the home page and quiz page have hover effects to catch the user's attention.
+        - The choice of question categories provides options depending on how the user would enjoy playing at that moment.
+    <h2 align="center"><img src="assets/readme-assets/first-time-one.png"></h2>
 
-## FAQ about the uptime script
+    2. As a First Time Visitor, I want to be able to easily navigate throughout the quiz site.
 
-**Why have you added this script?**
+        - The site contains clearly defined buttons with either hover effects or pointer cursors to be recogisable to the user.
+        - Once a category has been chosen the site moves through a set of questions automatically, so the user can focus on playing the quiz.
+        - The quiz page has a button to return to the categories and a button to quit the game should the user choose to. 
+    <h2 align="center"><img src="assets/readme-assets/first-time-two.png"></h2>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    3. As a First Time Visitor, I want to be able to understand the site enough to recommend it to friends.
 
-**How will this affect me?**
+        - The interface is approachable and easy to navigate.
+        - Each category game is structured the same way, making it easy to understand quickly.
+    <h2 align="center"><img src="assets/readme-assets/first-time-three.png"></h2>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-   #### Returning Visitor Goals
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    1. As a Returning Visitor, I want to remember the interface and use the site intuitively.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+        - All elements are clearly laid out and in an understandable layout for ease of use.
+        - The different quiz categories use the same format during the game, allowing a user to play any of them easily even if they only have experience of one. 
+    <h2 align="center"><img src="assets/readme-assets/returning-one.png"></h2>
 
-**So….?**
+    2. As a Returning Visitor, I want to be able to see my score and try to better it.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+        - While playing the quiz the user's current score is displayed above the question.
+        - Once they have answered all the questions a modal displays their final score, in green for clarity.
+        - When the user returns to the home page to choose another category the score from their previous game is displayed in the header.
+    <h2 align="center"><img src="assets/readme-assets/returning-two.png"></h2>
 
-**Can I opt out?**
+    3. As a Returning Visitor, I want to be able to know the site well enough to explain it to friends.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+        - The intuitive and easy to remember nature of the site means that once the user has become comfortable with it they are able to relay how it works to friends.
+    <h2 align="center"><img src="assets/readme-assets/returning-three.png"></h2>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+    4. As a Returning Visitor, I want to be able to contact the site owner if necessary.
 
-**Anything more?**
+        - A button that functions as the footer prompts the user to "get in touch".
+        - The button contains both text and a mail icon to make it recognisable.
+    <h2 align="center"><img src="assets/readme-assets/returning-four.png"></h2>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Further Testing
 
----
+-   The Website was tested on Google Chrome and Safari browsers on both desktop and mobile, and Firefox, Microsoft Edge and Internet Explorer on desktop.
+-   The website was viewed on a variety of devices including MacBook, laptop, iPad, iPhone 7 plus, iPhone 12 mini, Samsung Galaxy Note8 and Samsung Galaxy Note20 Ultra.
+-   Friends and family members were asked to review the site to point out any issues. 
+-   Several friends who often attend and play pub quizes were asked to review the site, and responded that the content is interesting and relevant, and that it fits the intended audience and purpose. 
 
-Happy coding!
+### Bugs
+
+-   Pages and linked sections begin at the top of the viewport and are therefore hidden behind the fixed header.
+    - fixed by creating the section-padding class and setting it's size to clear the header.
+-   When completing the form element and clicking the 'Check Answers' button for the first time the site reloads. Any time after this the button correctly displays the modal box.
+    - fixed by wrapping the button in a parent div.
+-   Image in 'Where Is She?' section becomes distorted on iPad screensize.
+    - fixed by moving it's css rule into the media query for the previous size of screen.
+-   Positioning of one image and the form are shifted on Internet Explorer. louvre-crowd.jpg is pushed all the way to the right and the fieldsets in the form overlap each other.
+    - not fixed - works correct in all other browsers tested.
+
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/EllieThurlwell/project1-discoverart)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. On the lefthand menu locate the "Pages" button.
+4. Under "Source", click the dropdown called "None" and select "Master Branch". Click "Save".
+5. The page will automatically refresh and provide a link to the [published site](https://elliethurlwell.github.io/project1-discoverart/).
+
+## Credits
+
+### Code
+
+-   Gitpod workspace came from this Code Institute [template](https://github.com/Code-Institute-Org/gitpod-full-template).
+-   Layout of README file came from this Code Institute [sample](https://github.com/Code-Institute-Solutions/SampleREADME).
+-   The code for the end of quiz modal box was influenced by this W3Schools [Modal Box](https://www.w3schools.com/howto/howto_css_modals.asp) tutorial.
+
+### Content
+
+-   Questions and answers were sourced from this [collection](https://pubquizquestionshq.com/categories) of pub quiz questions, or written by the developer.
+
+### Media
+
+-   The background image is used under the Unsplash license of free use.
+-   Image by [Nikola Jovanovic](https://unsplash.com/@danteov_seen) on [Unsplash](https://unsplash.com/).
+
+### Other
+
+-   Many thanks to Code Institute tutor support and mentor [Akshat Garg](https://github.com/akshatnitd) for their help during this project.

@@ -26,7 +26,7 @@ h1, h2 {
     color: #1c313a;
 }
 
-/* header both pages */
+/* header home page */
 header {
     background-color: #ede2e2;
     height: 5rem;
@@ -54,6 +54,7 @@ header {
     display: inline-block;
 }
 
+/* header quiz page */
 #categories-btn {
     float: right;
     margin-right: 1.5rem;
@@ -94,7 +95,7 @@ span p {
     display: inline-block;
 }
 
-#cats-a, #cats-b, #qs-one, #qs-two {
+#qs-one, #qs-two {
     margin: 0 15vw;
     display: flex;
     justify-content: space-around;
@@ -214,22 +215,6 @@ div span {
     height: 35%;
 }
 
-/* #modal-close {
-	color: #718792;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-    width: auto;
-    padding: 0 1rem;
-    margin: 0;
-}
-
-#modal-close:hover, #modal-close:focus {
-	color: #1c313a;
-	text-decoration: none;
-	cursor: pointer;
-} */
-
 #modal-message {
     padding-top: 3vh;
     color: #1c313a;
@@ -260,19 +245,9 @@ div span {
     text-decoration: none;
     color: #1c313a;
 }
-/* to be applied by javascript */
-/* .correct {
-    background-color: limegreen;
-}
-
-.incorrect {
-    background-color: orangered;
-} */
 
 /* footer both pages */
 footer {
-    /* position: fixed; */
-    /* bottom: 0; */
     background-color: #ede2e2;
     height: 3rem;
     width: 10rem;
@@ -294,9 +269,6 @@ footer a {
 
 /* media queries */
 @media screen and (max-width: 1000px) {
-    /* body {
-        background-repeat: repeat;
-    } */
     .game-area {
         margin: 4vh 4vw;
     }

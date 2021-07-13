@@ -1,3 +1,4 @@
+// categories of questions
 const CATEGORIES = [
     {
         id: 'cat1',
@@ -25,6 +26,7 @@ const CATEGORIES = [
     }
 ];
 
+// all available questions identifiable by category
 const questionBank = [
     //category 1
     {

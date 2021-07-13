@@ -1,6 +1,6 @@
 const TOTAL_QUESTIONS = 11;
-let answerBtns = document.getElementsByClassName('answer-btn');
 
+// set the category of the current window and check validity. prompt user if invalid
 function getCategoryFromURLParams() {
   const urlParams = new URLSearchParams(window.location.search);
   console.log(urlParams.get('category'));
@@ -16,6 +16,7 @@ if (!isCategoryValid(currentCategoryId)) {
   window.location.href = './'
 }
 
+// functions to display the questions and answers from the relevant category
 const questionsToShow = questionBank.filter(
   (eachQuestion) => eachQuestion.categoryId === currentCategoryId
 );
@@ -50,6 +51,7 @@ function updateQuestionNumberOnUI() {
   document.getElementById('current-q').innerText = ++oldNumber;
 }
 
+// check if the user selected answer is correct and style accordingly
 function checkAnswer(event) {
   let selectedAnswer = event.target;
   const isCorrect = selectedAnswer.dataset.correct === 'true';
@@ -79,18 +81,14 @@ function showNextQuestion() {
   showQuestion(currentQuestionIndex);
 }
 
+// modal box to display after all questions answered
 function onGameOver() {
-  // SHow a popup
   let modal = document.getElementById('score-modal');
-  // let modalClose = document.getElementById('modal-close');
   let modalScore = document.getElementById('modal-score');
 
   modalScore.innerText = localStorage.getItem('totalScore');
   modal.style.display = 'block';
   
-  // modalClose.onClick = function() {
-  //   modal.style.display = 'none';
-  // }
   window.onClick = function(event) {
     if (event.target == modal) {
       modal.style.display = 'none';
@@ -98,6 +96,7 @@ function onGameOver() {
   }
 }
 
+// confirm whether the user wants to quit
 function quitQuiz() {
   let link = document.getElementById('quit-link');
   let ok = confirm('Are you sure you want to quit?');
